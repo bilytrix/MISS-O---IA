@@ -25,3 +25,10 @@ const perguntas = [
     alternativas: ["Entre 4 a 6 litros", "São retirados 450 mililitros"],
   },
 ];
+let atual = 0;
+let perguntaAtual;
+function mostraPergunta() {
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+mostraPergunta();
